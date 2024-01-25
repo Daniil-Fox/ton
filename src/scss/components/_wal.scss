@@ -297,6 +297,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 13px;
+    text-align: right;
   }
 
   &__cost {
@@ -307,6 +308,10 @@
     font-style: normal;
     font-weight: 600;
     line-height: 1;
+
+    &--plus {
+      color: #FCA034;
+    }
   }
 
   &__name {

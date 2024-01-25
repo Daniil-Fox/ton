@@ -3866,6 +3866,7 @@ main {
   -ms-flex-pack: center;
   justify-content: center;
   gap: 13px;
+  text-align: right;
 }
 .wal-tab__cost {
   color: #A3E4FF;
@@ -3875,6 +3876,9 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 1;
+}
+.wal-tab__cost--plus {
+  color: #FCA034;
 }
 .wal-tab__name {
   display: block;
