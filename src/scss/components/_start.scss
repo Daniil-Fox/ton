@@ -22,9 +22,9 @@ main {
   display: none;
 }
 
-.footer {
-  margin-top: auto;
-}
+// .footer {
+//   margin-top: auto;
+// }
 
 .header__language {
   display: none;
@@ -742,7 +742,21 @@ main {
 }
 
 .footer {
-  padding-top: 231px;
+  margin-bottom: 80px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -97px;
+    left: 25%;
+    width: 587px;
+    height: 292px;
+    border-radius: 587px;
+    opacity: 0.9;
+    background: radial-gradient(50% 50% at 50% 50%, #9093FF 0%, rgba(144, 147, 255, 0.00) 100%);
+    filter: blur(50px);
+  }
 }
 
 .footer__mobile {

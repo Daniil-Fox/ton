@@ -21,7 +21,7 @@
 </head>
 
 <body class="page__body">
-  <div class="site-container settings-section">
+  <div class="site-container">
     <header class="header">
   <div class="container">
     <div class="header__body">
@@ -57,73 +57,163 @@
   </div>
 </header>
     <main class="main">
-      <section class="settings">
-        <div class="container">
-          <h2 class="settings__title">
-            Настройки
-          </h2>
-          <div class="settings__content">
-            <div class="settings__wrapper">
-              <table class="settings__table">
-                <tbody>
-                  <tr>
-                    <td class="settings__capture">Ваш уровень</td>
-                    <td class="settings__val">Standard</td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Статус</td>
-                    <td class="settings__val">
-                      <div class="status"></div>Активен
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Ваш Id</td>
-                    <td class="settings__val">123456789</td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Имя пользователя</td>
-                    <td class="settings__val">Ulia Palmina</td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="settings__table">
-                <tbody>
-                  <tr data-select="lang">
-                    <td class="settings__capture">Язык</td>
-                    <td class="settings__val">Русский<span></span></td>
-                  </tr>
-                  <tr data-select="val">
-                    <td class="settings__capture">Валюта</td>
-                    <td class="settings__val">USD<span></span></td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Скачать логотип</td>
-                    <td class="settings__val">
-                      <div class="download"></div><a href="#"></a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Десктопная версия</td>
-                    <td class="settings__val"><span></span><a href="#"></a></td>
-                  </tr>
-                </tbody>
-              </table>
-              <table class="settings__table">
-                <tbody>
-                  <tr>
-                    <td class="settings__capture">Служба поддержки</td>
-                    <td class="settings__val"><span></span><a href="#"></a></td>
-                  </tr>
-                  <tr>
-                    <td class="settings__capture">Новости TONBINGO</td>
-                    <td class="settings__val"><span></span><a href="#"></a></td>
-                  </tr>
-                </tbody>
-              </table>
+      <section class="wal">
+  <div class="container wal__container">
+    <h2 class="wal__title">Кошелёк</h2>
+    <div class="wal__wrapper">
+      <div class="wal__row wal__row--centered">
+        <div class="wal__data">
+          <div class="wal__left">
+            <span class="wal__value">
+              3671 ₽
+            </span>
+            <span class="wal__name">Баланс</span>
+          </div>
+          <div class="wal__sep"></div>
+          <div class="wal__link">
+            <span class="wal__name">Кошелёк</span>
+            <span class="wal__descr">mfjo984ghvn0-aw9<img src="./img/copy-icon.svg" alt=""></span>
+            <span class="wal__name wal__name--untie">Отвязать<img src="./img/chain-icon.svg" alt=""></span>
+          </div>
+        </div>
+
+        <div class="wal__buttons">
+          <div class="wal-btn">
+            <button class="btn-reset wal-btn__btn wal-btn__btn--arru">
+            </button>
+            <span>Пополнить</span>
+          </div>
+          <div class="wal-btn">
+            <button class="btn-reset wal-btn__btn wal-btn__btn--arrd">
+            </button>
+            <span>Вывести</span>
+          </div>
+          <div class="wal-btn">
+            <button class="btn-reset wal-btn__btn wal-btn__btn--exchange">
+            </button>
+            <span>Обменять</span>
+          </div>
+          <div class="wal-btn">
+            <button class="btn-reset wal-btn__btn wal-btn__btn--plus">
+            </button>
+            <span>Купить TON</span>
+          </div>
+        </div>
+      </div>
+      <div class="wal__row">
+        <div class="wal__table wal-tab">
+          <h3 class="wal-tab__title">Активы</h3>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img">
+                <img src="./img/dia.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Toncoin</span>
+                <span class="wal-tab__desc">10 TON</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost">1000 ₽</span>
+            </div>
+          </div>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--ton">
+                <img src="./img/ton-icon.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Доллары</span>
+                <span class="wal-tab__desc">100 USDT</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost">1000 ₽</span>
+            </div>
+          </div>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--bit">
+                <img src="./img/bit-icon.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Bitcoin</span>
+                <span class="wal-tab__desc">10 BTC</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost">1000 ₽</span>
             </div>
           </div>
         </div>
-      </section>
+        <div class="wal__table wal-tab">
+          <h3 class="wal-tab__title">Транзакции</h3>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--sec wal-tab__img--u">
+                <img src="./img/arrow.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Вывод</span>
+                <span class="wal-tab__desc">20.20.23 в 19:51</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost">-100 $</span>
+              <span class="wal-tab__desc">Отправлено</span>
+            </div>
+          </div>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--sec wal-tab__img--d">
+                <img src="./img/arrow.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Пополнение</span>
+                <span class="wal-tab__desc">20.20.23 в 19:51</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost wal-tab__cost--plus">+71 $</span>
+              <span class="wal-tab__desc">Получено</span>
+            </div>
+          </div>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--sec">
+                <img src="./img/plus-icon.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Покупка ТОN</span>
+                <span class="wal-tab__desc">20.20.23 в 19:51</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost wal-tab__cost--plus">+123,34 TON</span>
+              <span class="wal-tab__desc">Отправлено</span>
+            </div>
+          </div>
+          <div class="wal-tab__item">
+            <div class="wal-tab__left">
+              <div class="wal-tab__img wal-tab__img--sec">
+                <img src="./img/double-arrow.svg" alt="">
+              </div>
+              <div class="wal-tab__info">
+                <span class="wal-tab__name">Обмен: ХХ на ХХ</span>
+                <span class="wal-tab__desc">20.20.23 в 19:51</span>
+              </div>
+            </div>
+            <div class="wal-tab__right">
+              <span class="wal-tab__cost">-100 $</span>
+              <span class="wal-tab__cost wal-tab__cost--plus">+123,34 TON</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer">
   <div class="container">

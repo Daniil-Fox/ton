@@ -1,0 +1,153 @@
+.games {
+  padding-top: 75px;
+  padding-bottom: 100px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url('./../img/games/sparks.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -220px;
+    top: -100px;
+    width: 820px;
+    height: 820px;
+    background-image: url('./../img/games/ball.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 6;
+    margin: 0;
+    margin-bottom: 30px;
+    color: #F2F2F2;
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+
+  }
+
+  &__items {
+    position: relative;
+    z-index: 6;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+  }
+
+  &__container {
+    padding: 0 120px;
+  }
+}
+
+.game-item {
+  border-radius: 10.528px;
+  background: linear-gradient(305deg, #30328E 22.01%, #4649C1 72.75%);
+  padding-bottom: 22px;
+
+  &__title {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    margin: 0;
+    color: #F2F2F2;
+    text-align: center;
+    width: 100%;
+    max-width: 180px;
+    text-shadow: 0.798px 0.798px 12.969px rgba(230, 75, 18, 0.50);
+    font-family: "DragonHunter";
+    font-size: 26.321px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__img {
+    position: relative;
+    margin-bottom: 17px;
+    height: 175px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F28F1F;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    color: #8B8FFF;
+    font-family: Gilroy;
+    font-size: 17.547px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 17px;
+    margin-bottom: 30px;
+
+    span {
+      display: block;
+      width: 9px;
+      height: 9px;
+      border-top: 1px solid #8B8FFF;
+      border-right: 1px solid #8B8FFF;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__btn {
+    display: block;
+    position: relative;
+    width: 177px;
+    height: 43px;
+    margin: 0 auto;
+
+    svg {
+      position: absolute;
+      inset: 0;
+      object-fit: cover;
+    }
+
+    span {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 6;
+      transform: translate(-50%, -50%);
+      color: #FFF;
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 17.547px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      white-space: nowrap;
+    }
+  }
+}
