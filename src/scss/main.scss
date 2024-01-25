@@ -1,0 +1,21 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import "./components/start";
+@import "./components/header";
+@import "./components/menu";
+@import "./components/start-media";
+@import "./components/loto";
+@import "./components/lotosmart-mob";
+@import "./components/blockchain";
+@import "./components/world";
+@import "./components/team-sec";
+@import "./components/settings";
+@import "./components/partners";
+@import "./components/cost";
+@import "./components/bonus";
+@import "./components/binary";
+@import "./components/example";

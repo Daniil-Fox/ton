@@ -1,0 +1,344 @@
+.team-sec {
+  min-height: 100vh;
+  padding-top: 217px;
+
+  &__container {
+    padding: 0 120px;
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 48px;
+    color: #F2F2F2;
+    font-family: Arial;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__table {
+    margin-bottom: 104px;
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(126deg, #FCA034 8.77%, #F46C20 96.75%);
+    box-shadow: 5px 2px 30px 0px rgba(244, 108, 32, 0.40);
+    padding-top: 8px;
+    padding-left: 88px;
+    padding-right: 92px;
+    padding-bottom: 0px;
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 0 21px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #FFAE4F;
+      }
+    }
+
+    td {
+      // flex: 1;
+    }
+  }
+}
+
+.td-capture {
+  color: #FFF3DC;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.td-value {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.info-table {
+  grid-column: 5 span;
+  padding: 24px;
+  padding-top: 18px;
+  padding-right: 12px;
+  // padding-bottom: 28px;
+  border-radius: 16px;
+  background: #2E318F;
+  max-width: 450px;
+
+  border: 1.333px solid #9093FF;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 6px;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__date {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 30px;
+
+    h5 {
+      margin: 0;
+      color: #B0CFFF;
+      font-family: Arial;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    span {
+      color: #FFF;
+      text-align: center;
+      font-family: Arial;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  &__table {
+    width: 100%;
+    display: block;
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+
+    td {
+      flex: 1;
+      text-align: left;
+
+      &:last-child {
+        padding-left: 12rem;
+      }
+    }
+  }
+
+  &__capture {
+    color: #B0CFFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__value {
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+
+.info-right {
+  grid-column: 7 / 4 span;
+
+  &__table {
+    margin-bottom: 44px;
+    margin-left: auto;
+    display: block;
+    border-radius: 10px;
+    border: 1.333px solid #9093FF;
+    background: #30328E;
+    padding: 0 16px;
+
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 5px;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #5659B7;
+      }
+    }
+
+    td {
+      &:first-child {
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+      }
+
+      &:last-child {
+        color: #B0CFFF;
+        text-align: right;
+        font-family: Gilroy;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 17px;
+      }
+
+      span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid #B0CFFF;
+        border-right: 1px solid #B0CFFF;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.set {
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 13.714px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14.571px;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 34px;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--prev,
+    &--next,
+    &--auto {
+      margin-bottom: 5px;
+    }
+
+    &--prev,
+    &--next {
+      position: relative;
+      width: 38.75px;
+      height: 42.857px;
+      border-radius: 100%;
+      border: 0.857px solid #393DA7;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 12px;
+        background-image: url('./../img/arrow.svg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--next {
+      &::before {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+    }
+
+    &--auto {
+      width: 38.75px;
+      height: 42.857px;
+      border-radius: 100%;
+      position: relative;
+      overflow: hidden;
+
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: linear-gradient(269deg, #FCA034 -26.63%, #F46C20 75.11%);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 4;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 20px;
+        height: 20px;
+        background-image: url('./../img/auto.svg');
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    }
+
+    span {
+      color: #B0CFFF;
+      text-align: center;
+      font-family: Gilroy;
+      font-size: 10.286px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 8.571px;
+      /* 83.333% */
+    }
+  }
+}

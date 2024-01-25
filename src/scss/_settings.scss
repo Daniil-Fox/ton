@@ -1,0 +1,260 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  height: 100%;
+  font-family: var(--font-family, sans-serif);
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.page__body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  font-size: 16px;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  font-weight: 400;
+  font-style: normal;
+  background-color: #24277E;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 410px;
+    height: 303px;
+    border-radius: 410px;
+    opacity: 0.9;
+    background: radial-gradient(50% 50% at 50% 50%, #1157C1 0%, rgba(46, 49, 143, 0.00) 100%);
+    filter: blur(10px);
+  }
+}
+
+.market-section {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 7;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 1400px;
+    background-image: url('./../img/sparks3.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.main {
+  &--market {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 1400px;
+      width: 100%;
+      height: 1400px;
+      background-image: url('./../img/sparks.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 70%;
+      height: 800px;
+      background-image: url('./../img/sparks2.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.main-container {
+  background-image: url("./../img/bg.webp");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background: #23267d;
+}
+
+.is-hidden {
+  display: none !important;
+  /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.extra {
+  &1 {
+    position: absolute;
+    // transform: rotate(-120.615deg);
+    top: 194px;
+    left: -10px;
+  }
+}
+
+.market-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: flex-start;
+  padding: 0 120px;
+}
+
+.market-title {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #F2F2F2;
+  font-family: Jost;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.market-wrap {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 250px;
+    width: 420px;
+    height: 460px;
+    background-image: url('./../img/lot.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(75%, -50%);
+    width: 1492px;
+    height: 1288px;
+    border-radius: 1092px;
+    opacity: 0.9;
+    background: radial-gradient(50% 50% at 50% 50%, #A0A3FF 0%, rgba(160, 163, 255, 0.00) 100%);
+    filter: blur(10px);
+  }
+}

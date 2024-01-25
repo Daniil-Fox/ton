@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container settings-section">
+    @include('partials/header.html')
+    <main class="main">
+      <section class="settings">
+        <div class="container">
+          <h2 class="settings__title">
+            Настройки
+          </h2>
+          <div class="settings__content">
+            <div class="settings__wrapper">
+              <table class="settings__table">
+                <tbody>
+                  <tr>
+                    <td class="settings__capture">Ваш уровень</td>
+                    <td class="settings__val">Standard</td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Статус</td>
+                    <td class="settings__val">
+                      <div class="status"></div>Активен
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Ваш Id</td>
+                    <td class="settings__val">123456789</td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Имя пользователя</td>
+                    <td class="settings__val">Ulia Palmina</td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="settings__table">
+                <tbody>
+                  <tr data-select="lang">
+                    <td class="settings__capture">Язык</td>
+                    <td class="settings__val">Русский<span></span></td>
+                  </tr>
+                  <tr data-select="val">
+                    <td class="settings__capture">Валюта</td>
+                    <td class="settings__val">USD<span></span></td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Скачать логотип</td>
+                    <td class="settings__val">
+                      <div class="download"></div><a href="#"></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Десктопная версия</td>
+                    <td class="settings__val"><span></span><a href="#"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+              <table class="settings__table">
+                <tbody>
+                  <tr>
+                    <td class="settings__capture">Служба поддержки</td>
+                    <td class="settings__val"><span></span><a href="#"></a></td>
+                  </tr>
+                  <tr>
+                    <td class="settings__capture">Новости TONBINGO</td>
+                    <td class="settings__val"><span></span><a href="#"></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

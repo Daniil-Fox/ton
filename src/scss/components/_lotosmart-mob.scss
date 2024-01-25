@@ -1,0 +1,27 @@
+.lotosmart-mob {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .lotosmart__body {
+    border-radius: 10px;
+    border: 1px solid #9093FF;
+
+    background: #2E318F;
+  }
+
+  .lotosmart__card-item {
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+    background: #23267D;
+    padding-right: 50px;
+  }
+
+  .lotomaster-img-mobile {
+    top: -112px;
+  }
+}

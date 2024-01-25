@@ -1,0 +1,197 @@
+.settings {
+  padding-top: 70px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 974px;
+    height: 1079px;
+    right: 0;
+    top: -10%;
+    border-radius: 1079px;
+    opacity: 0.8;
+    background: radial-gradient(50% 50% at 50% 50%, #9093FF 0%, rgba(144, 147, 255, 0.00) 100%);
+    filter: blur(63.24257278442383px);
+    transform: translateX(50%);
+  }
+
+  &-section {
+    padding-bottom: 82px;
+
+
+    .footer {
+      padding-top: 100px;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 25%;
+        top: 10%;
+        width: 587px;
+        height: 142px;
+        border-radius: 587px;
+        opacity: 0.9;
+        background: radial-gradient(50% 50% at 50% 50%, #9093FF 0%, rgba(144, 147, 255, 0.00) 100%);
+        filter: blur(50px);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    color: #F2F2F2;
+    font-family: Jost;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 5;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #9093FF;
+    background: #2E318F;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(50%, -50%);
+      width: 460px;
+      height: 460px;
+      border-radius: 560px;
+      opacity: 0.9;
+      background: radial-gradient(50% 50% at 50% 50%, #1157C1 0%, rgba(46, 49, 143, 0.00) 100%);
+      filter: blur(10px);
+    }
+  }
+
+  &__content {
+    max-width: 440px;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 355px;
+      height: 355px;
+      right: 70px;
+      bottom: -20px;
+      transform: translate(100%, 0);
+      background-image: url('./../img/joystick.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__table {
+    position: relative;
+    z-index: 5;
+    border-radius: 10px;
+    border: 1px solid #9093FF;
+    background: #23267D;
+    display: block;
+    padding: 0 12px;
+
+    // &:last-child {
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     z-index: -3;
+    //     left: 0;
+    //     bottom: 0;
+    //     transform: translate(-50%, 50%);
+    //     width: 270px;
+    //     height: 160px;
+    //     border-radius: 274.267px;
+    //     border: 1px solid #9093FF;
+    //     opacity: 0.9;
+    //     background: radial-gradient(50% 50% at 50% 50%, #99C2FF 0%, rgba(153, 194, 255, 0.00) 100%);
+    //     filter: blur(25px);
+    //   }
+    // }
+
+    &:not(:last-child) {
+      margin-bottom: 6px;
+    }
+
+    tbody {
+      display: block;
+      position: relative;
+    }
+
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0px;
+      position: relative;
+
+      a {
+        position: absolute;
+        inset: 0;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #2E318F;
+      }
+
+      span {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-top: 1px solid #B0CFFF;
+        border-right: 1px solid #B0CFFF;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__capture {
+    color: #FFF;
+    leading-trim: both;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.429px;
+  }
+
+  &__val {
+    color: #B0CFFF;
+    text-align: right;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.429px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .status {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: #05B501;
+    }
+
+    .download {
+      width: 8px;
+      height: 12px;
+      background-image: url('./../img/download.svg');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}

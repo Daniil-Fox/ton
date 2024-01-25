@@ -1,0 +1,27 @@
+.header {
+  &--sec {
+    position: absolute;
+    width: 100%;
+  }
+
+  &__logo {
+    // width: 346px;
+    // height: 83px;
+
+    font-family: "DragonHunter";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: transparent;
+    background: linear-gradient(92deg, #E23E0A 3.55%, #D9601C 39.06%, #F49320 64.26%, #FF5C00 90.09%) orange;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

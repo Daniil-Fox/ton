@@ -1,0 +1,90 @@
+.cost {
+  padding-top: 80px;
+
+
+  &__item {}
+
+  &__noty {
+    margin: 0;
+    color: #B0CFFF;
+    font-family: Gilroy;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+  }
+
+  &__capture {
+    margin-bottom: 25px;
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+  }
+
+  &__table {
+    display: block;
+    border-radius: 10px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+
+    &--yel {
+      background: linear-gradient(269deg, #FCA034 -26.63%, #F46C20 75.11%);
+      box-shadow: 5px 2px 30px 0px rgba(244, 108, 32, 0.40);
+
+      tr {
+        &:not(:last-child) {
+          border-bottom: 1px solid #FFAE4F;
+        }
+      }
+    }
+
+    &--blue {
+      border: 1px solid #9093FF;
+      background: #393DA7;
+
+      tr {
+        &:not(:last-child) {
+          border-bottom: 1px solid #6F72D0;
+        }
+      }
+    }
+
+    tbody {
+      display: block;
+    }
+
+    tr {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 0;
+    }
+
+    td {
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  &__header {
+    color: #FFE4B0;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+  }
+
+  &__value {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+  }
+}
