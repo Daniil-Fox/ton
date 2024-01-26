@@ -2,6 +2,10 @@
   padding-top: 70px;
   position: relative;
 
+  @include mobile {
+    padding-top: 40px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -17,11 +21,11 @@
   }
 
   &-section {
-    padding-bottom: 82px;
+    // padding-bottom: 82px;
 
 
     .footer {
-      padding-top: 100px;
+      // padding-top: 100px;
       position: relative;
 
       &::after {
@@ -48,6 +52,12 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1;
+
+    @include mobile {
+      font-size: 28px;
+      margin-bottom: 30px;
+      margin-left: 10px;
+    }
   }
 
   &__wrapper {
@@ -71,12 +81,27 @@
       background: radial-gradient(50% 50% at 50% 50%, #1157C1 0%, rgba(46, 49, 143, 0.00) 100%);
       filter: blur(10px);
     }
+
+    @include mobile {
+      border-radius: none;
+      border: none;
+      background: none;
+      padding: 0;
+    }
   }
 
   &__content {
     max-width: 440px;
     position: relative;
 
+    @include mobile {
+      border-radius: 10px;
+      border: 1px solid #9093FF;
+      background: #2E318F;
+      padding: 10px;
+      padding-top: 35px;
+      padding-bottom: 30px;
+    }
 
     &::after {
       content: "";
@@ -90,6 +115,15 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+
+      @include mobile {
+        width: 140px;
+        height: 140px;
+        right: 0;
+        bottom: unset;
+        top: 0;
+        transform: translate(0, -40%) rotateY(180deg);
+      }
     }
   }
 

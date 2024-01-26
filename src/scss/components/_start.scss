@@ -745,6 +745,10 @@ main {
   margin-bottom: 80px;
   position: relative;
 
+  @include mobile {
+    margin-bottom: 30px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -793,14 +797,13 @@ main {
 }
 
 .footer__mobile-link {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px 20px;
+  padding-top: 30px;
 }
 
-.footer__mobile-link a {
-  margin: 15px 20px 15px 0px;
-}
+.footer__mobile-link a {}
 
 .footer__mobile-link a,
 .footer__mobile-agreement a {
