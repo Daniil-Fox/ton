@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
-  <title>MaxGraph New Site</title>
+  <title>Ton</title>
   <link rel="preload" href="./fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
@@ -28,11 +28,13 @@
       <a href="./" class="header__logo">
         <img src="./img/logo.svg" alt="#" />
       </a>
-      <div class="header__burger">
-        <img src="./img/burger.svg" alt="" />
-      </div>
-      <div class="header__language">
-        <button>ru</button>
+      <div class="header__nav-mob">
+        <div class="header__language">
+          ru
+        </div>
+        <div class="header__burger">
+          <div class="header__burger-line"></div>
+        </div>
       </div>
       <nav class="menu">
         <ul class="menu__list list-reset">
@@ -58,6 +60,7 @@
 </header>
     <main class="main">
       <section class="games">
+        <div class="ball rellax" data-rellax-speed="-2"></div>
         <div class="container games__container">
           <h2 class="games__title">Лото</h2>
           <div class="games__items">
@@ -73,11 +76,11 @@
               </a>
               <button class="btn-reset game-item__btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="62" viewBox="0 0 192 62" fill="none">
-                  <g filter="url(#filter0_d_178_75)">
-                    <path
-                      d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
-                      fill="url(#paint0_linear_178_75)" />
-                  </g>
+
+                  <path
+                    d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
+                    fill="url(#paint0_linear_178_75)" />
+
                   <defs>
                     <filter id="filter0_d_178_75" x="0.307301" y="0.336921" width="190.791" height="60.9788"
                       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -115,11 +118,11 @@
               </a>
               <button class="btn-reset game-item__btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="62" viewBox="0 0 192 62" fill="none">
-                  <g filter="url(#filter0_d_178_75)">
-                    <path
-                      d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
-                      fill="url(#paint0_linear_178_75)" />
-                  </g>
+
+                  <path
+                    d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
+                    fill="url(#paint0_linear_178_75)" />
+
                   <defs>
                     <filter id="filter0_d_178_75" x="0.307301" y="0.336921" width="190.791" height="60.9788"
                       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -157,11 +160,11 @@
               </a>
               <button class="btn-reset game-item__btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="62" viewBox="0 0 192 62" fill="none">
-                  <g filter="url(#filter0_d_178_75)">
-                    <path
-                      d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
-                      fill="url(#paint0_linear_178_75)" />
-                  </g>
+
+                  <path
+                    d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
+                    fill="url(#paint0_linear_178_75)" />
+
                   <defs>
                     <filter id="filter0_d_178_75" x="0.307301" y="0.336921" width="190.791" height="60.9788"
                       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -199,11 +202,11 @@
               </a>
               <button class="btn-reset game-item__btn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="62" viewBox="0 0 192 62" fill="none">
-                  <g filter="url(#filter0_d_178_75)">
-                    <path
-                      d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
-                      fill="url(#paint0_linear_178_75)" />
-                  </g>
+
+                  <path
+                    d="M10.2084 16.9267C11.2843 10.3942 16.9314 5.60107 23.552 5.60107L165.692 5.60108C172.595 5.60108 178.39 10.8002 179.136 17.6628L180.489 30.1065C181.344 37.9623 175.309 44.8737 167.41 45.0867L21.2178 49.0277C12.7267 49.2566 6.12938 41.6928 7.50977 33.3116L10.2084 16.9267Z"
+                    fill="url(#paint0_linear_178_75)" />
+
                   <defs>
                     <filter id="filter0_d_178_75" x="0.307301" y="0.336921" width="190.791" height="60.9788"
                       filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -279,6 +282,60 @@
           </div>
         </div>
       </section>
+      <div class="mobile-menu">
+  <div class="mobile-menu__window">
+    <div class="mobile-menu__header">
+      <h3 class="mobile-menu__title">Меню</h3>
+      <button class="btn-reset mobile-menu__close">
+        &times;
+      </button>
+    </div>
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__list list-reset">
+        <li class="mobile-menu__item">
+          <a href="./games.html" class="mobile-menu__link">Лотто</a>
+          <span></span>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./wallet.html" class="mobile-menu__link">Кошелёк</a>
+          <span></span>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./team.html" class="mobile-menu__link">Команда</a>
+          <span></span>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="./settings.html" class="mobile-menu__link">Настройки</a>
+          <span></span>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mobile-menu__add">
+      <nav class="mobile-menu__policy policy">
+        <ul class="list-reset policy__list">
+          <li class="policy__item">
+            <a href="#" class="policy__link">Политика конфиденциальности</a>
+          </li>
+          <li class="policy__item">
+            <a href="#" class="policy__link">Договор публичной оферты</a>
+          </li>
+          <li class="policy__item">
+            <a href="#" class="policy__link">Пользовательское соглашение</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__socials">
+        <a href="#" class="socials__link">
+          <img src="./img/tg-icon.svg" alt="">
+        </a>
+        <a href="#" class="socials__link">
+          <img src="./img/youtube-icon.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
     <footer class="footer">
   <div class="container">

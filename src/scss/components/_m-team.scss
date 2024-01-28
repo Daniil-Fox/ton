@@ -1,0 +1,148 @@
+.m-team {
+  &__container {
+
+
+    overflow: hidden;
+
+
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    border: 1px solid #9093FF;
+    background: #2E318F;
+    position: relative;
+    padding: 54px;
+
+    @include mobile {
+      padding: 0;
+      display: block;
+      border: none;
+      background: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform: translateY(-50%);
+      width: 1311px;
+      height: 192.308px;
+      border-radius: 1311px;
+      border: 1px solid #9093FF;
+      opacity: 0.9;
+      background: radial-gradient(50% 50% at 50% 50%, #2B71DB 0%, rgba(43, 113, 219, 0.00) 100%);
+      filter: blur(10px);
+
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+
+  &__vars {
+    p {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 400;
+      line-height: 21px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      span {
+        display: block;
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__team {
+    grid-row: 2 span;
+
+    .bin-team__img {
+      @include mobile {
+        width: 50px;
+        height: 50px;
+      }
+
+      &::before,
+      &::after {
+        width: 50px;
+      }
+
+      &--main {
+        &::before {
+          left: -50px;
+        }
+
+        &::after {
+          left: 50px;
+        }
+      }
+    }
+
+    .bin-team__row:not(:last-child) {
+      @include mobile {
+        margin-bottom: 10px;
+      }
+    }
+
+    .bin-team__title {
+      font-size: 12px;
+    }
+  }
+
+  &__left {
+    @include mobile {
+      width: 28rem;
+      margin: 0 auto;
+    }
+  }
+
+  &__desc {
+    color: #FFF;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 30px;
+
+    span {
+      color: #F67122;
+    }
+  }
+
+  &__table {
+    width: 280px;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.bin-team {
+  @include mobile {
+    display: none;
+  }
+}
+
+.bin-team--mob {
+  display: none;
+
+  @include mobile {
+    display: block;
+    margin-bottom: 30px;
+  }
+}

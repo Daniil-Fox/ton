@@ -3,8 +3,7 @@
   &__image {
     position: relative;
 
-    &::before {
-      content: "";
+    .money {
       position: absolute;
       bottom: -110px;
       left: -140px;

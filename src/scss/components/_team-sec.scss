@@ -61,6 +61,7 @@
       font-size: 28px;
       margin-left: 10px;
       margin-bottom: 20px;
+      max-width: 26rem;
     }
   }
 
@@ -76,7 +77,7 @@
     padding-right: 92px;
     padding-bottom: 0px;
     grid-column: 10 span;
-
+    overflow: hidden;
 
     @include mobile {
       grid-column: 1;
@@ -87,6 +88,8 @@
 
     tbody {
       display: block;
+      transition: max-height .4s ease-out;
+      will-change: max-height;
     }
 
     tr {
@@ -180,6 +183,8 @@
     grid-row: unset;
     order: 3;
     padding: 20px 10px;
+    width: 100%;
+    margin: 0 auto;
   }
 
   &__title {
@@ -313,9 +318,11 @@
     background: #30328E;
     padding: 0 16px;
 
+    overflow: hidden;
 
     tbody {
       display: block;
+
     }
 
     tr {
@@ -330,6 +337,18 @@
     }
 
     td {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 0;
+
+      .status {
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        background-color: #05B501;
+      }
+
       &:first-child {
         color: #FFF;
         font-family: Gilroy;
@@ -473,5 +492,30 @@
       line-height: 8.571px;
       /* 83.333% */
     }
+  }
+}
+
+
+.team-sec tr.team-sec__table-mob {
+  display: none;
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  td {
+    display: flex;
+    justify-content: center;
+  }
+
+  span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid #FFF3DC;
+    border-bottom: 2px solid #FFF3DC;
+    transform: rotate(45deg);
   }
 }

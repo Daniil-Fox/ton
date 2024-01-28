@@ -35,6 +35,8 @@
     padding: 30px;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 
     &::before,
     &::after {
@@ -65,12 +67,27 @@
     justify-content: space-between;
     gap: 40px;
 
+    @include mobile {
+      flex-direction: column;
+      gap: 60px;
+    }
+
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      @include mobile {
+        flex-direction: column;
+      }
     }
+
+
 
     &:not(:last-child) {
       margin-bottom: 30px;
+
+      @include mobile {
+        margin-bottom: 50px;
+      }
     }
 
     &:not(:first-child) {
@@ -102,5 +119,129 @@
     &:not(:last-child) {
       margin-bottom: 25px;
     }
+  }
+
+  &__team {
+    flex-shrink: 0;
+
+    position: relative;
+    min-width: 400px;
+    display: block !important;
+
+    @include mobile {
+      min-width: unset;
+      width: 100%;
+    }
+
+    .bin-team__row {
+      gap: 100px;
+    }
+
+    .bin-team__img--main {
+
+      &::before,
+      &:after {
+        background-image: url('./../img/shape-arrow.png');
+        width: 120px;
+      }
+
+      &::before {
+        left: -112px;
+      }
+    }
+
+    .bin-team__img--sec::before,
+    .bin-team__img--sec::after {
+      display: none;
+    }
+
+    .bin-team__img--th::before,
+    .bin-team__img--th::after {
+      display: none;
+    }
+
+    .bin-team__img,
+    .bin-team__img {
+      margin-bottom: 10px;
+    }
+
+    .bin-team__row:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__descript {
+    color: #F2F2F2;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 15.627px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.015px;
+
+    @include mobile {
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+      transform: translateY(100%);
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+
+  &__value {
+    position: absolute;
+    color: #F2F2F2;
+    text-align: center;
+    font-family: Gilroy;
+    font-size: 15.627px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.015px;
+
+    @include mobile {
+      font-size: 12px;
+    }
+
+    &--circle {
+      width: 100px;
+      min-height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('./../img/circle.png');
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &--left {
+      left: 0px;
+      top: -30px;
+    }
+
+    &--right {
+      right: 0px;
+      top: -30px;
+    }
+
+    &--middle {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 20%);
+
+      @include mobile {
+        transform: translate(-50%, 50%);
+      }
+    }
+  }
+}
+
+.bin-team__team {
+  @include mobile {
+    position: relative;
   }
 }

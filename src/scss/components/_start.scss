@@ -74,7 +74,6 @@ main {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  /* 86.4px */
 }
 
 .loto__left {
@@ -180,6 +179,11 @@ main {
 
 .gameton {
   padding-top: 170px;
+  padding-bottom: 100px;
+
+  @include mobile {
+    padding-bottom: 0;
+  }
 }
 
 .footer__mobile-right img .gameton {
@@ -313,8 +317,7 @@ main {
   &__body {
     position: relative;
 
-    &::after {
-      content: "";
+    .ball {
       position: absolute;
       width: 200px;
       height: 200px;
@@ -332,8 +335,7 @@ main {
     }
   }
 
-  &::before {
-    content: "";
+  .money {
     position: absolute;
     right: 0;
     bottom: 50px;
@@ -375,7 +377,7 @@ main {
 
   /* 67.2px */
   @media (max-width: 768px) {
-    max-width: 132px;
+    max-width: 13.2rem;
   }
 }
 
@@ -408,14 +410,38 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
 }
 
-.lotosmart__card-item {
+.lotosmart__card {
   padding: 14px 200px 14px 16px;
   border-radius: 15.988px;
   background: #d24f06;
+  position: relative;
+
+  &--ton {
+    background-color: #23267D;
+  }
+}
+
+.lotosmart__card-item {
   display: flex;
   align-items: center;
+
+
+  svg {
+    display: none;
+
+    @include mobile {
+      display: block;
+    }
+
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 10px;
+    right: 16px;
+  }
 }
 
 .lotosmart__card {
@@ -450,8 +476,7 @@ main {
     position: relative;
     grid-column: 7 span;
 
-    &::after {
-      content: "";
+    .banks {
       position: absolute;
       left: -230px;
       bottom: 37px;
@@ -469,6 +494,7 @@ main {
       z-index: 4;
       height: 100%;
       width: 100%;
+      object-fit: contain;
     }
   }
 }
@@ -492,8 +518,7 @@ main {
   gap: 32px;
   position: relative;
 
-  &::after {
-    content: "";
+  .conf {
     position: absolute;
     right: -100px;
     top: 0;
@@ -560,6 +585,10 @@ main {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @include mobile {
+    width: 100%;
+  }
 }
 
 .blockchain__body-right {
@@ -651,6 +680,25 @@ main {
   border-radius: 16px;
   border: 1px solid #9093ff;
   background: #494dc1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 480px;
+    top: 66px;
+    width: 54px;
+    height: 60px;
+    background-image: url('./../img/footer-money.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      top: unset;
+      bottom: 0;
+      left: 68px;
+    }
+  }
 }
 
 .footer__body::before {
@@ -745,6 +793,27 @@ main {
   margin-bottom: 80px;
   position: relative;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 480px;
+    top: 66px;
+    width: 54px;
+    height: 60px;
+    background-image: url('./../img/footer-money.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: none;
+
+    @include mobile {
+      display: block;
+      top: unset;
+      bottom: 0;
+      left: 68px;
+    }
+  }
+
   @include mobile {
     margin-bottom: 30px;
   }
@@ -761,10 +830,13 @@ main {
     background: radial-gradient(50% 50% at 50% 50%, #9093FF 0%, rgba(144, 147, 255, 0.00) 100%);
     filter: blur(50px);
   }
+
+
 }
 
 .footer__mobile {
   display: none;
+  position: relative;
 }
 
 .footer__mobile-middle {
@@ -839,4 +911,47 @@ main {
 
 .footer__mobile-agreement {
   padding-top: 40px;
+}
+
+
+.blockchain__body-cards {
+  .lotosmart__card-content {
+    max-height: unset;
+
+    @include mobile {
+      max-height: 0;
+    }
+  }
+
+  .lotosmart__card {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 100px;
+    max-width: unset;
+
+    @include mobile {
+      display: block;
+      padding-right: 0;
+    }
+
+    p {
+      color: #FFF;
+      font-family: Arial;
+      font-size: 13.928px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+    }
+  }
+
+  .lotosmart__card-item {
+    flex-shrink: 0;
+    width: 300px;
+
+    @include mobile {
+      width: unset;
+    }
+  }
 }

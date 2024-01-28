@@ -1,0 +1,208 @@
+.m-hero {
+  padding-top: 125px;
+  position: relative;
+
+  @include mobile {
+    padding-top: 40px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 1000px;
+    background-image: url('./../img/sparks-m.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    position: relative;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+
+    }
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    color: #F2F2F2;
+    font-family: Jost;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    max-width: 400px;
+
+    @include mobile {
+      font-size: 24px;
+      margin-bottom: 58px;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 48px;
+    padding: 34px 31px;
+    border-radius: 10px;
+    background: linear-gradient(269deg, #FCA034 -26.63%, #F46C20 75.11%);
+    box-shadow: 5px 2px 30px 0px rgba(244, 108, 32, 0.40);
+    max-width: 360px;
+
+    @include mobile {
+      max-width: unset;
+      margin-bottom: 80px;
+
+    }
+
+    p {
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+
+      @include mobile {
+        font-size: 14px;
+        max-width: 130px;
+      }
+
+      span {
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__extra {
+    position: relative;
+    max-width: 360px;
+
+    p {
+      position: relative;
+      z-index: 3;
+      color: #FFF;
+      font-family: Gilroy;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 21px;
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 388px;
+      height: 94px;
+      border-radius: 388px;
+      opacity: 0.6;
+      background: #06F;
+      filter: blur(47px);
+      display: none;
+
+      @include mobile {
+        display: block;
+      }
+    }
+
+    @include mobile {
+      margin: 0 10px;
+    }
+
+
+  }
+
+  &__images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    @include mobile {
+      position: absolute;
+      top: 0px;
+      right: 0;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 1100px;
+      height: 500px;
+      border-radius: 1092px;
+      opacity: 0.9;
+      background: radial-gradient(50% 50% at 50% 50%, #A0A3FF 0%, rgba(160, 163, 255, 0.00) 100%);
+      filter: blur(10px);
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+  }
+
+  &__img {
+    &--1 {
+      position: absolute;
+      z-index: 6;
+      width: 318px;
+      height: 318px;
+      left: -60px;
+      bottom: 0;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &--3 {
+      position: absolute;
+      z-index: 5;
+      width: 500px;
+      height: 500px;
+      right: -200px;
+      bottom: -100px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &--2 {
+      position: relative;
+      z-index: 4;
+      height: 452px;
+      width: 450px;
+
+      @include mobile {
+        position: absolute;
+        width: 330px;
+        height: 330px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

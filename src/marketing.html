@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container site-container--marketing">
+    @include('partials/header.html')
+    <main class="main">
+      @include('partials/m-hero.html')
+      @include('partials/m-desc.html')
+      <div class="m__wrapper">
+        @include('partials/m-reward.html')
+        @include('partials/m-team.html')
+      </div>
+      @include('partials/m-ps.html')
+      @include('partials/mobile-menu.html')
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

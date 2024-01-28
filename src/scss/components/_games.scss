@@ -2,6 +2,11 @@
   padding-top: 75px;
   padding-bottom: 100px;
 
+  @include mobile {
+    padding-bottom: 40px;
+    padding-top: 50px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -14,10 +19,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    @include mobile {
+      height: 64.4rem;
+      width: 80%;
+    }
   }
 
-  &::after {
-    content: "";
+  .ball {
     position: absolute;
     right: -220px;
     top: -100px;
@@ -27,6 +35,13 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include mobile {
+      width: 300px;
+      height: 300px;
+      top: 0;
+      right: -80px;
+    }
   }
 
   &__title {
@@ -41,6 +56,12 @@
     font-weight: 700;
     line-height: 1;
 
+    @include mobile {
+      font-size: 3.8rem;
+      margin-bottom: 3rem;
+      margin-left: 10px;
+    }
+
   }
 
   &__items {
@@ -49,10 +70,18 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 19px;
+
+    @include mobile {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   &__container {
     padding: 0 120px;
+
+    @include mobile {
+      padding: 0 1rem;
+    }
   }
 }
 
@@ -60,6 +89,10 @@
   border-radius: 10.528px;
   background: linear-gradient(305deg, #30328E 22.01%, #4649C1 72.75%);
   padding-bottom: 22px;
+
+  @include mobile {
+    padding-bottom: 10px;
+  }
 
   &__title {
     position: absolute;
@@ -78,6 +111,14 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include mobile {
+      color: #F2F2F2;
+      text-shadow: 0.455px 0.455px 7.391px rgba(230, 75, 18, 0.50);
+      font-size: 1.5rem;
+      font-weight: 400;
+      max-width: 10rem;
+    }
   }
 
   &__img {
@@ -91,6 +132,10 @@
     background-color: #F28F1F;
     border-radius: 10px;
     overflow: hidden;
+
+    @include mobile {
+      height: 10rem;
+    }
 
     img {
       width: 100%;
@@ -111,6 +156,11 @@
     padding: 0 17px;
     margin-bottom: 30px;
 
+    @include mobile {
+      font-size: 1rem;
+      margin-bottom: 1.7rem;
+    }
+
     span {
       display: block;
       width: 9px;
@@ -118,6 +168,11 @@
       border-top: 1px solid #8B8FFF;
       border-right: 1px solid #8B8FFF;
       transform: rotate(45deg);
+
+      @include mobile {
+        width: .5rem;
+        height: .5rem;
+      }
     }
   }
 
@@ -128,10 +183,20 @@
     height: 43px;
     margin: 0 auto;
 
+    @include mobile {
+      width: 80%;
+      height: 3.5rem;
+    }
+
     svg {
       position: absolute;
       inset: 0;
       object-fit: cover;
+
+      @include mobile {
+        width: 100%;
+        height: 100%;
+      }
     }
 
     span {
@@ -148,6 +213,10 @@
       font-weight: 600;
       line-height: normal;
       white-space: nowrap;
+
+      @include mobile {
+        font-size: 1rem;
+      }
     }
   }
 }
